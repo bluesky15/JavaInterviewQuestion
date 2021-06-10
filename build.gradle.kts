@@ -22,7 +22,13 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.8.9")
 
 }
+tasks.withType<KotlinCompile>().configureEach {
+    kotlinOptions {
+        useIR = true
+    }
+}
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
     jvmTarget = "1.8"
 }
+

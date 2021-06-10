@@ -1,5 +1,5 @@
 package com.lkb
 
 fun main() {
-    println("hello")
+    println("hello!!!!@@@")
 }
