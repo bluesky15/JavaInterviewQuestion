@@ -20,7 +20,8 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.8.9")
-
+    //using reflection
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.10")
 }
 tasks.withType<KotlinCompile>().configureEach {
     kotlinOptions {
